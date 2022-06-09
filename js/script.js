@@ -8,11 +8,11 @@ const otherItems = document.querySelectorAll('.other-items.percent');
 const otherItems2 = document.querySelectorAll('.other-items.number');
 const inputRollback = document.querySelector('.rollback input[type="range"]');
 const spanRollback = document.querySelector('.rollback .range-value');
-let inputTotalInput = document.getElementsByClassName('total-input');
-let inputTotalCount = document.getElementsByClassName('total-input');
-let inputTotalCountOther = document.getElementsByClassName('total-input');
-let inputTotalFullCount = document.getElementsByClassName('total-input');
-let inputTotalCountRollback = document.getElementsByClassName('total-input');
+let inputTotalInput = document.getElementsByClassName('total-input')[0];
+let inputTotalCount = document.getElementsByClassName('total-input')[1];
+let inputTotalCountOther = document.getElementsByClassName('total-input')[2];
+let inputTotalFullCount = document.getElementsByClassName('total-input')[3];
+let inputTotalCountRollback = document.getElementsByClassName('total-input')[4];
 let blockScreen = document.querySelectorAll('.screen');
 
 for(let i = 0; i < inputTotal.length; i++) {
