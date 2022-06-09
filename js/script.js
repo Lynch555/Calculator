@@ -8,35 +8,16 @@ const otherItems = document.querySelectorAll('.other-items.percent');
 const otherItems2 = document.querySelectorAll('.other-items.number');
 const inputRollback = document.querySelector('.rollback input[type="range"]');
 const spanRollback = document.querySelector('.rollback .range-value');
-let inputTotalInput = document.getElementsByClassName('total-input');
-// let inputTotalCount = document.getElementsByClassName("main-total__input")[1];
-// let inputTotalCountOther = document.getElementsByClassName("main-total__input")[2];
-// let inputTotalFullCount = document.getElementsByClassName("main-total__input")[3];
-// let inputTotalCountRollback = document.getElementsByClassName("main-total__input")[4];
+let inputTotalInput = document.getElementsByClassName('main-total__item');
+let inputTotalCount = document.getElementsByClassName('main-total__item');
+let inputTotalCountOther = document.getElementsByClassName('main-total__item');
+let inputTotalFullCount = document.getElementsByClassName('main-total__item');
+let inputTotalCountRollback = document.getElementsByClassName('main-total__item');
 let blockScreen = document.querySelectorAll('.screen');
 
-for(let i = 0; i < inputTotalInput.length; i++) {
-    console.log(inputTotalInput[i]);
+for(let i = 0; i < inputTotal.length; i++) {
+    console.log(inputTotal[i]);
 }
-
-// for(let i = 0; i < inputTotalCount.length; i++) {
-//     console.log(inputTotalCount[i]);
-// }
-
-// for(let i = 0; i < inputTotalCountOther.length; i++) {
-//     console.log(inputTotalCountOther[i]);
-// }
-
-// for(let i = 0; i < inputTotalFullCount .length; i++) {
-//     console.log(inputTotalFullCount [i]);
-// }
-
-// for(let i = 0; i < inputTotalCountRollback.length; i++) {
-//     console.log(inputTotalCountRollback[i]);
-// }
-
-// console.log(inputTotal[0]);
-
 
 const appData = {
     title: '',
@@ -158,9 +139,9 @@ console.log(otherItems);
 console.log(otherItems2);
 console.log(inputRollback);
 console.log(spanRollback);
-
-// console.log(inputTotalCount[1]);
-// console.log(inputTotalCountOther[2]);
-// console.log(inputTotalFullCount[3]);
-// console.log(inputTotalCountRollback[4]);
+console.log(inputTotal);
+console.log(inputTotalCount);
+console.log(inputTotalCountOther);
+console.log(inputTotalFullCount);
+console.log(inputTotalCountRollback);
 console.log(blockScreen);
