@@ -4,10 +4,13 @@ const title = document.getElementsByTagName('H1')[0];
 const startBtn = document.getElementsByClassName('handler_btn')[0];
 const resetBtn = document.getElementsByClassName('handler_btn')[1];
 const buttonPlus = document.querySelector('.screen-btn');
+
 const otherItemsPercent = document.querySelectorAll('.other-items.percent');
 const otherItemsNumber = document.querySelectorAll('.other-items.number');
+
 const inputRange = document.querySelector('.rollback > .main-controls__range > [type="range"]');
 const rangeValue = document.querySelector('.rollback > .main-controls__range > .range-value');
+
 const cmsOpen = document.getElementById('cms-open'); // Усложненное задание
 const cmsVariants = document.querySelector('.hidden-cms-variants'); // Усложненное задание
 const cmsInput = document.querySelector('.hidden-cms-variants > .main-controls__input') // Усложненное задание
