@@ -44,8 +44,8 @@ const appData = {
         this.addTitle();
 
         buttonPlus.addEventListener('click', this.addScreenBlock)
-        startBtn.addEventListener('click', this.checkValue)
-        resetBtn.addEventListener('click', this.reset)
+        startBtn.addEventListener('click', this.start.bind(appData))
+        resetBtn.addEventListener('click', this.reset.bind(this))
         cmsOpen.addEventListener('change', this.getCms) // Усложненное задание
         inputRange.addEventListener('input', this.getRollback)
     },
@@ -75,10 +75,10 @@ const appData = {
     reset: function () {
         resetBtn.style.display = 'none';
         startBtn.style.display = 'block';
-        appData.clearScreens();
-        appData.clearServices();
-        appData.clearCms(); // Усложненное задание
-        appData.clearPrices();
+        this.clearScreens();
+        this.clearServices();
+        this.clearCms(); // Усложненное задание
+        this.clearPrices();
 
         console.log(appData);
         appData.showResult();
